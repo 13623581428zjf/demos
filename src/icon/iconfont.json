@@ -1,0 +1,107 @@
+{
+  "id": "850680",
+  "name": "mypublic",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4237408",
+      "name": "总工时",
+      "font_class": "zonggongshi",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "6865384",
+      "name": "工时核价",
+      "font_class": "gongshihejia-",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "12786593",
+      "name": "GYSY",
+      "font_class": "GYSY",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "7196635",
+      "name": "摄像头",
+      "font_class": "shexiangtou",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "7155657",
+      "name": "圆点",
+      "font_class": "yuandian",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6904293",
+      "name": "开关",
+      "font_class": "kaiguan1",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "991433",
+      "name": "成功",
+      "font_class": "chenggong",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4425836",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e79e",
+      "unicode_decimal": 59294
+    },
+    {
+      "icon_id": "1214969",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e801",
+      "unicode_decimal": 59393
+    },
+    {
+      "icon_id": "4550306",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6152452",
+      "name": "火警",
+      "font_class": "huojingshujutongjiicon",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "6152453",
+      "name": "故障",
+      "font_class": "guzhangshujutongjiicon",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "6152454",
+      "name": "水压",
+      "font_class": "tuoyuan",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "1125578",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+.top-bar .swiper-container-box{
+	width:84%!important;
+}
+.top-bar .nav-menu{
+	width:16%!important;
+}
+.drill-screen .entrance-top {
+	padding: 0 24px!important;
+}
+
+.drill-screen .exit {
+	right: 24px!important;
+}
+
+.drill-screen .statistic-box {
+	top: 104px!important;
+	padding: 0 24px!important;
+	box-sizing: border-box!important;
+}
+
+.drill-screen .c-content .right-scroll {
+	padding-top: 30px!important;
+}
+
+.drill-screen .dv-scroll-board {
+	width: 740px!important;
+}
+
+.drill-screen .num-desc {
+	font-size: 18px!important;
+	-webkit-text-shadow: 0 0 12px rgba(0, 216, 255, .5)!important;
+	-moz-text-shadow: 0 0 12px rgba(0, 216, 255, .5)!important;
+	-ms-text-shadow: 0 0 12px rgba(0, 216, 255, .5)!important;
+	-o-text-shadow: 0 0 12px rgba(0, 216, 255, .5)!important;
+	text-shadow: 0 0 12px rgba(0, 216, 255, .5)!important;
+}
+
+.drill-screen .leftChart {
+	width: 24%!important;
+}
+
+.drill-screen .rightChart {
+	width: 24%!important;
+}
+
+.drill-screen .centerShow {
+	width: 52%!important;
+}
+
+.drill-screen .left_bar {
+	height: 52%!important;
+}
+
+.drill-screen .left_table {
+	height: 48%!important;
+	margin-top: 20px!important;
+}
+
+.drill-screen .right_pie {
+	height: 52%!important;
+}
+
+.drill-screen .right_table {
+	height: 48%!important;
+	margin-top: 20px!important;
+}
+
+.drill-screen .center-footer {
+	height: 30%!important;
+}
+
+.drill-screen .attrack_defense_score-box {
+	width: 740px!important;
+	margin-left: -370px!important;
+}
+
+.drill-screen .score {
+	width: 70px!important;
+	font-size: 22px!important;
+	line-height: 26px!important;
+}
+
+.drill-screen .score-middle {
+	width: 598px!important;
+}
+
+.drill-screen .score-middle>div {
+	margin-right: 2px!important;
+}
+
+.drill-screen .container {
+	top: 300px!important;
+}
+
+.drill-screen .topList {
+	position: relative!important;
+}
+
+.drill-screen .leftLogo,
+.drill-screen .rightLogo {
+	height: 150%!important;
+	position: relative!important;
+	background-position: 50% 68%!important;
+	background-size: 45%!important;
+}
+
+.drill-screen .center-top {
+	width: 120%!important;
+	left: 50%!important;
+	margin-left: -60%!important;
+	background-size: 110%!important;
+}
+
+.drill-screen .middle-long {
+	width: 35.6%!important;
+	height: 83%!important;
+}
+
+.drill-screen .ad-left-fire,
+.drill-screen .ad-right-fire {
+	width: 51.6%!important;
+	height: 100%!important;
+}
+
+.drill-screen .middle-vs {
+	width: 30%!important;
+	height: 74%!important;
+	left: 35%!important;
+}
+
+.drill-screen .ad-left-shou,
+.drill-screen .ad-right-shou {
+	width: 40.4%!important;
+	height: 90%!important;
+}
+
+.drill-screen .lunbo-title {
+	font-size: 20px!important;
+	font-weight: bold!important;
+}
+
+.drill-screen .teamnames span {
+	font-size: 30px!important;
+}
+
+.drill-screen .configRank {
+	padding: 20px!important;
+	box-sizing: border-box!important;
+}
+
+.drill-screen .row-item {
+	/*margin:20px auto!important;*/
+	font-size: 14px!important;
+}
+
+.drill-screen .center-top {
+	background-size: 110%!important;
+}
+
+.drill-screen .c-content.right-scroll {
+	padding-top: 30px!important;
+}
+
+.overview .statistic-item .icon {
+	margin: 0 30px 0 20px!important;
+}

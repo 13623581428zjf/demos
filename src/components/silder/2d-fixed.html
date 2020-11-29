@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Cute Slider</title>
+
+		<script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cute/cute.slider.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cute/cute.transitions.all.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="style/main.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="style/slider-style.css" type="text/css" media="screen" charset="utf-8" />
+
+		<style>
+			/* -------------------------------------
+			 * Slider Style
+			 * ------------------------------------*/
+			.banner-box{
+				width:100%;
+				height:360px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.cute-slider {
+				position: relative;
+				/*margin-top:50px;*/
+			}
+			
+			.wrapper {
+				width:100%;
+				margin:0 auto;
+				max-width:100%;
+				min-width:360px;
+				
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="banner-box">
+				<div id="wrapper" class="wrapper">
+			<div id="my-cute-slider" class="cute-slider" data-width="1140" data-height="360" data-overpause="true">
+				<ul data-type="slides">
+					<li data-delay="3" data-src="3" data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+						<img src="images/bannerItem1.jpg" data-src="images/bannerItem1.jpg" data-thumb="images/thumbs/1.png	" />
+
+					</li>
+					<li data-delay="3" data-src="3" data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+						<img src="images/bannerItem2.jpg" data-src="images/bannerItem2.jpg" data-thumb="images/thumbs/2.png" />
+
+					</li>
+					<li data-delay="3" data-src="3" data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45" data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41">
+						<img src="images/bannerItem3.jpg" data-src="images/bannerItem3.jpg" data-thumb="images/thumbs/3.png" />
+
+					</li>
+					
+				</ul>
+				<ul data-type="controls">			
+					<li data-type="captions"> </li>
+					<li data-type="link"> </li>
+					<li data-type="video"> </li>
+					<li data-type="slideinfo"> </li>
+					<li data-type="circletimer"> </li>
+					<li data-type="next"> </li>
+					<li data-type="previous"> </li>
+					<li data-type="slidecontrol"> </li>
+					<li data-type="bartimer"> </li>				
+				</ul>
+			</div>
+		</div>
+			</div>
+
+		<script>
+			var myslider = new Cute.Slider();
+			myslider.setup("my-cute-slider", "wrapper");
+		</script>
+	</body>
+
+</html>
