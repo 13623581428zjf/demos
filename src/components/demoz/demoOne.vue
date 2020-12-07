@@ -46,22 +46,33 @@
 		<div>{{rideo}}</div>
 		<!--动态class-->
 		<div :class="istrue?'red':'blue'" @click="clickme">我是动态绑定</div>
-		<!--、、、、、、、、、、、、、、、tab切换、、、、、、、、、、、、、、、、、、、、、-->
-		<div style="display: flex;">
-			<div style="margin-left: 20px;" v-for='item in headerList' @click="hes(item)">{{item.name}}</div>
+		<!--tab切换===============================================================================-->
+		<ul style="float: left;" v-for="(item,$index) in tabArr">
+			<li style="list-style: none;margin-left: 20px;" @click="toggle($index ,item.tab)" :class="{active:active==$index}">{{item.tab}}</li>
+		</ul>
+		<div class="cl"></div>
+		<div v-if='this.active ==0'>
+			<div v-for="item in actName">{{item.name}}</div>
 		</div>
-		<div style="display: flex;">
-			<div style="width: 130px;margin-left: 20px;" v-if="this.heasid ==0">内容1</div>
-			<div style="width: 130px;margin-left: 20px;" v-else="this.heasid ==1">内容2</div>
-			<div style="width: 130px;margin-left: 20px;" v-else="this.heasid ==2">内容3</div>
+		<div v-if='this.active ==1'>
+			<div v-for="item in actAge">{{item.age}}</div>
 		</div>
+		<div v-if='this.active ==2'>
+			<p>我是内容3</p>
+		</div>
+		<!--购物车计算-->
+		<div v-for="item in shopAtion">
+			<input type="checkbox" v-model="newshopAtion" :value="item" /> {{item.num}}&nbsp;价格{{item.price}}
+		</div>
+		<div>总价:{{newshopAtion}}</div>
+		<br />
+		<div>总金额:{{shopaf()}}</div>
 	</div>
 </template>
 
 <script>
 	export default {
 		demoOne: 'demoOne',
-
 		data() {
 			return {
 				list: [{
@@ -95,20 +106,52 @@
 				checkgroup: [],
 				rideo: {},
 				istrue: true,
-				headerList: [{
-						name: '首页1',
+				tabArr: [{
+						tab: '内容1',
 						index: 1
 					},
 					{
-						name: '首页2',
+						tab: '内容2',
 						index: 2
 					},
 					{
-						name: '首页3',
+						tab: '内容3',
 						index: 3
 					}
 				],
-				heasid: 0
+				active: 0,
+				currentView: '',
+				actName: [{
+						name: '张景峰'
+					},
+					{
+						name: '张景好'
+					}
+				],
+				actAge: [{
+						age: '11'
+					},
+					{
+						age: '12'
+					}
+				],
+				shopAtion: [{
+						name: '水果',
+						num: 1,
+						price: 10
+					},
+					{
+						name: '蔬菜',
+						num: 2,
+						price: 20
+					},
+					{
+						name: '电视',
+						num: 3,
+						price: 100
+					}
+				],
+				newshopAtion:[]
 			}
 		},
 		created: function() {
@@ -145,8 +188,18 @@
 			clickme: function() {
 				this.istrue = false;
 			},
-			hes:function(item){
-				console.log(item.index)
+			toggle: function(a, b) {
+				console.log(a, b);
+				this.active = a;
+				this.currentView = b;
+			},
+			shopaf:function(){
+				//函数计算中的状态改变后，函数会自动改变。
+				var nums = 0;
+				for (var i = 0; i < this.newshopAtion.length; i++) {
+					nums+=this.newshopAtion[i].num*this.newshopAtion[i].price;
+				}
+				return nums;
 			}
 
 		}
@@ -164,5 +217,14 @@
 	
 	.clear {
 		clear: left;
+	}
+	
+	.active {
+		background: red;
+		color: white;
+	}
+	
+	.cl {
+		clear: both;
 	}
 </style>

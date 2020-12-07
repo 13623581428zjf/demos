@@ -14,6 +14,11 @@ const user = () => import('@/pages/admin/user.vue');
 const type = () => import('@/pages/admin/type.vue');
 const content = () => import('@/pages/admin/content.vue');
 const demoOne = () => import('@/components/demoz/demoOne.vue');
+const shopOption = () => import('@/components/demoz/shopOption.vue');
+const tab = () => import('@/components/demoz/tab.vue');
+const LX = () => import('@/components/demoz/lianxi.vue');
+const FM = () => import('@/components/demoz/form.vue');
+const COM = () => import('@/components/demoz/computed.vue');
 export default new Router({
 	base: '',
 	routes: [{
@@ -84,6 +89,36 @@ export default new Router({
 			name: 'demoOne',
 			component: demoOne,
 			title:'练习' 
+		},
+		{
+			path: '/shopOption',
+			name: 'shopOption',
+			component: shopOption,
+			title:'练习shopOption' 
+		},
+		{
+			path: '/tab',
+			name: 'tab',
+			component: tab,
+			title:'练习tab' 
+		},
+		{
+			path: '/lianxi',
+			name: 'lianxi',
+			component: LX,
+			title:'练习聊天' 
+		},
+		{
+			path: '/form',
+			name: 'form',
+			component: FM,
+			title:'form'
+		},
+		{
+			path: '/computed',
+			name: 'computed',
+			component: COM,
+			title:'computed'
 		}
 	]
 });

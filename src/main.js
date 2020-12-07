@@ -12,6 +12,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 import Wl from 'wl-vue-select';
 import 'wl-vue-select/lib/wl-vue-select.css';
 import moment from 'moment';
+import Promise from "promise-polyfill";
+if(!window.Promise){
+    window.Promise = Promise;
+}
 Vue.prototype.$moment = moment;
 Vue.use(dataV);
 Vue.use(Wl);
