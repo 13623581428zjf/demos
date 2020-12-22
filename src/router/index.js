@@ -19,6 +19,26 @@ const tab = () => import('@/components/demoz/tab.vue');
 const LX = () => import('@/components/demoz/lianxi.vue');
 const FM = () => import('@/components/demoz/form.vue');
 const COM = () => import('@/components/demoz/computed.vue');
+const DM = () => import('@/components/demoz/xunidom.vue');
+const ZJ = () => import('@/components/demoz/zujian.vue');
+const FZ = () => import('@/components/demoz/fuzi.vue');
+const Header = () => import('@/components/demoz/header.vue');
+const ZF = () => import('@/components/demoz/zifu.vue');
+const ZFHeader = () => import('@/components/demoz/ziHeader.vue');
+const AppLe = () => import('@/components/demoz/apple.vue');
+const FD = () => import('@/components/demoz/firstChild.vue');
+const SE = () => import('@/components/demoz/second.vue');
+const REF = () => import('@/components/demoz/ref.vue');
+const TR = () => import('@/components/demoz/transtion.vue');
+const FZT = () => import('@/components/demoz/fuziTwo.vue');
+const FZTHR = () => import('@/components/demoz/fuziT.vue');
+const FZF = () => import('@/components/demoz/fuziF.vue');
+const YY = () => import('@/components/demoz/yeye.vue');
+const BB = () => import('@/components/demoz/baba.vue');
+const BBT = () => import('@/components/demoz/babaT.vue');
+const MA = () => import('@/components/demoz/mama.vue');
+const NV = () => import('@/components/demoz/nvnv.vue');
+const SMZQ = () => import('@/components/demoz/smzq.vue');
 export default new Router({
 	base: '',
 	routes: [{
@@ -119,6 +139,126 @@ export default new Router({
 			name: 'computed',
 			component: COM,
 			title:'computed'
+		},
+		{
+			path: '/xunidom',
+			name: 'xunidom',
+			component: DM,
+			title:'xunidom'
+		},
+		{
+			path: '/zujian',
+			name: 'zujian',
+			component: ZJ,
+			title:'zujian'
+		},
+		{
+			path: '/fuzi',
+			name: 'fuzi',
+			component: FZ,
+			title:'fuzi'
+		},
+		{
+			path: '/header',
+			name: 'header',
+			component: Header,
+			title:'header'
+		},
+		{
+			path: '/ziHeader',
+			name: 'ziHeader',
+			component: ZFHeader,
+			title:'ziHeader'
+		},
+		{
+			path: '/zifu',
+			name: 'zifu',
+			component: ZF,
+			title:'zifu'
+		},
+		{
+			path: '/apple',
+			name: 'apple',
+			component: AppLe,
+			title:'apple'
+		},
+		{
+			path: '/firstChild',
+			name: 'firstChild',
+			component: FD,
+			title:'firstChild'
+		},
+		{
+			path: '/second',
+			name: 'second',
+			component: SE,
+			title:'second'
+		},
+		{
+			path: '/ref',
+			name: 'ref',
+			component: REF,
+			title:'ref'
+		},
+		{
+			path: '/transtion',
+			name: 'transtion',
+			component: TR,
+			title:'transtion'
+		},
+		{
+			path: '/fuziTwo',
+			name: 'fuziTwo',
+			component: FZT,
+			title:'fuziTwo'
+		},
+		{
+			path: '/fuziT',
+			name: 'fuziT',
+			component: FZTHR,
+			title:'fuziT'
+		},
+		{
+			path: '/fuziF',
+			name: 'fuziF',
+			component: FZF,
+			title:'fuziF'
+		},
+		{
+			path: '/yeye',
+			name: 'yeye',
+			component: YY,
+			title:'yeye'
+		},
+		{
+			path: '/baba',
+			name: 'baba',
+			component: BB,
+			title:'baba'
+		},
+		{
+			path: '/babaT',
+			name: 'babaT',
+			component: BBT,
+			title:'babaT'
+		},
+		{
+			path: '/mama',
+			name: 'mama',
+			component: MA,
+			title:'mama'
+		},
+		{
+			path: '/nvnv',
+			name: 'nvnv',
+			component: NV,
+			title:'nvnv'
+		},
+		{
+			path: '/smzq',
+			name: 'smzq',
+			component: SMZQ,
+			title:'smzq'
 		}
 	]
 });
